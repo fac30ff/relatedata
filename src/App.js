@@ -56,10 +56,10 @@ class App extends Component {
           accordion={accordion}
           onChange={this.onChange}
           activeKey={activeKey}
-        ><Panel header={`deviceSnmpMetrics`} key={0}>
+        ><Panel header={`deviceSnmpMetrics`} headerClass="my-header-class" key={1}>
           <Agrid data={snmpMonitoringConfig}/>
         </Panel>
-          <Panel header={`interfaceSnmpMetrics`} key={1}>
+          <Panel header={`interfaceSnmpMetrics`} headerClass="my-header-class" key={2}>
           <Bgrid data={snmpMonitoringConfig}/>
         </Panel>
 
